@@ -1,0 +1,5 @@
+{
+  "name": "test-checkout",
+  "private": true,
+  "type": "module"
+}
