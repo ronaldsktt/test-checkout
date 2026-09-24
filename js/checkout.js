@@ -121,7 +121,7 @@ async function pay() {
   btn.disabled = true;
   btn.textContent = 'Gerando PIX…';
   try {
-    const res = await fetch('api/create-pix.php', {
+    const res = await fetch('/api/create-pix', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, cpf, phone, addons: [...selected] }),
@@ -159,7 +159,7 @@ function openPix(data) {
 async function checkStatus() {
   if (!currentId) return;
   try {
-    const res = await fetch('api/status.php?id=' + encodeURIComponent(currentId));
+    const res = await fetch('/api/status?id=' + encodeURIComponent(currentId));
     const data = await res.json();
     if (data.status === 'completed') {
       clearInterval(pollTimer);
