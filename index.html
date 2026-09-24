@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prime Gold Black</title>
+  <meta name="description" content="Pagamento 100% seguro com confirmação imediata.">
+  <link rel="icon" href="assets/bbadd86883599c01.png">
+  <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+  <div class="banner">Convite exclusivo pra você — APENAS HOJE <b id="timer">09:51:00</b></div>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">
+        <img src="assets/b399dd389107d600.png" alt="Biblioteca VIP">
+        Biblioteca VIP
+      </div>
+      <div style="font-size:11px;color:var(--muted)">🇧🇷 PT</div>
+    </div>
+
+    <div class="hero">
+      <div class="tag">Digital product</div>
+      <div class="hero-frame">
+        <iframe
+          id="promoVideo"
+          src="https://iframe.mediadelivery.net/embed/634099/edd21468-4e22-4309-b89f-8f3deeed6878?autoplay=true&muted=true&preload=true&responsive=true&controls=true&bgcolor=101010"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Prime Gold Black"
+        ></iframe>
+        <button type="button" class="sound-btn" id="soundBtn" aria-label="Ligar som do vídeo">
+          <span>Ligar som</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="product">
+      <h1>Prime Gold Black</h1>
+      <div class="price-row">
+        <span class="old">R$ 77,96</span>
+        <span class="price" data-total>R$ 23,99</span>
+      </div>
+    </div>
+
+    <div class="step"><span class="num">2</span> Seus dados</div>
+    <label>Nome completo</label>
+    <input class="field" id="name" autocomplete="name" placeholder="Como no documento">
+    <label>E-mail</label>
+    <input class="field" id="email" type="email" autocomplete="email" placeholder="voce@email.com">
+    <div class="row2">
+      <div>
+        <label>CPF</label>
+        <input class="field" id="cpf" inputmode="numeric" placeholder="000.000.000-00">
+      </div>
+      <div>
+        <label>WhatsApp</label>
+        <input class="field" id="phone" type="tel" inputmode="numeric" placeholder="(11) 90000-0000">
+      </div>
+    </div>
+    <p class="hint">E-mail e telefone são usados pra mandar o acesso.</p>
+
+    <div class="step"><span class="num">3</span> Ofertas especiais — último dia</div>
+
+    <div id="bumps">
+    <button type="button" class="offer" data-id="xotaku4k" aria-pressed="false">
+      <span class="chk">✓</span>
+      <img src="assets/9dbabd63440c8b93.webp" alt="">
+      <div>
+        <h3>Xotaku Prime 4K</h3>
+        <p>+50GB em 4K. Bleach, Naruto, DBZ, Jujutsu.</p>
+      </div>
+      <div class="plus">+ R$ 11,99</div>
+    </button>
+
+    <button type="button" class="offer" data-id="sexy" aria-pressed="false">
+      <span class="chk">✓</span>
+      <img src="assets/c0726597edbd35d6.webp" alt="">
+      <div>
+        <h3>Revistas Sexy</h3>
+        <p>Todas as edições. +300 revistas.</p>
+      </div>
+      <div class="plus">+ R$ 9,99</div>
+    </button>
+
+    <button type="button" class="offer" data-id="antigos" aria-pressed="false">
+      <span class="chk">✓</span>
+      <img src="assets/f9b65898c7604209.jpg" alt="">
+      <div>
+        <h3>Títulos antigos</h3>
+        <p>Vídeos e gibis extras.</p>
+      </div>
+      <div class="plus">+ R$ 5,99</div>
+    </button>
+
+    <button type="button" class="offer" data-id="famosas" aria-pressed="false">
+      <span class="chk">✓</span>
+      <img src="assets/5bbcb55fa3050dba.png" alt="">
+      <div>
+        <h3>Canal das Famosinhas</h3>
+        <p>+30 mil mídias.</p>
+      </div>
+      <div class="plus">+ R$ 13,99</div>
+    </button>
+
+    <button type="button" class="offer" data-id="combo" aria-pressed="false">
+      <span class="chk">✓</span>
+      <img src="assets/c16bb66ac0f45464.webp" alt="">
+      <div>
+        <h3>Super Combo — Leve Tudo</h3>
+        <p>Tudo acima por um preço especial.</p>
+      </div>
+      <div class="plus">+ R$ 29,99</div>
+    </button>
+    </div>
+
+    <div class="step"><span class="num">4</span> Pagamento</div>
+    <div class="paybox">
+      <strong>Pix</strong>
+      <div style="font-size:12px;color:var(--muted);margin-top:4px">Aprovação na hora · SyncPay</div>
+    </div>
+
+    <div class="breakdown" id="breakdown"></div>
+    <div class="total">
+      <span>Total à vista</span>
+      <strong data-total>R$ 23,99</strong>
+    </div>
+
+    <div class="err" id="err"></div>
+    <button class="cta" id="payBtn">PAGAR COM PIX · R$ 23,99</button>
+
+    <div class="trust">
+      <span>Site protegido</span>
+      <span>SSL 256 bits</span>
+      <span>Pix instantâneo</span>
+      <span>Reembolso 7 dias</span>
+    </div>
+
+    <p class="fine">
+      Vendido por <b>Biblioteca VIP</b>. Compra processada via SyncPay. Conteúdo adulto. 18+.
+    </p>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="sheet">
+      <button class="close" id="closeModal" type="button" aria-label="Fechar">×</button>
+      <h2>Paga no Pix e libera agora</h2>
+      <p style="margin:0;color:var(--muted);font-size:13px">Valor: <b id="pixAmount" style="color:var(--gold)">R$ 23,99</b></p>
+      <div class="qrwrap"><div id="qrcode"></div></div>
+      <div class="pixcode" id="pixCode"></div>
+      <button class="copy" id="copyBtn" type="button">Copiar código Pix</button>
+      <p class="status" id="statusLine">Aguardando pagamento…</p>
+      <p class="hint" id="demoNote" style="display:none;text-align:center">MODO DEMO.</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>
